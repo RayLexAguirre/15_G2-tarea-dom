@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DOM 2.0</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,200&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head> 
+
+<body>
+  <div class="header">
+    <h1>Lista de contactos</h1>
+    <p class="azul">Con el presente registro se elaborara 
+    una lista para conocer los participantes del evento de caridad fabor de llenar todos los espacios pero el de la dirreccion es opcional, Gracias 😁</p>
+  </div>
+
+  <div class="content">
+    <div class="left">
+      <h2>Formulario de Registro</h2>
+      <div class="content-info">
+        <form>
+          <div class="field">
+            <label>Nombre:</label>
+            <input id="name" type="text" size=35>
+          </div>
+          <div class="field">
+            <label>Email:</label>
+            <input id="email" type="email" size=35>
+          </div>
+          <div class="field">
+            <label>Fecha de Nacimiento:</label>
+            <input id="birthDate" type="date" size=35>
+          </div>
+          <div class="field">
+            <label>Numero de Telefono:</label>
+            <input id="phoneNumber" type="number" size=35>
+          </div>
+          <div class="field">
+            <label>Dirrección:</label>
+            <input id="address" type="text" size=35>
+          </div>
+          <div class="field">
+            <input id="btnAdd" type="button" value="Agregar">
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="right">
+      <h2>Personas registradas</h2>
+      <div class="content-info">
+        <table id="registry">
+          <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Numero de Telefono</th>
+            <th>Address</th>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
